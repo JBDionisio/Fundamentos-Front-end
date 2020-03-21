@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<h1>Sistema de arquivos</h1>
+<ul class="tree">
+    <li>
+        <a href="">src</a>
+        <ul>            
+            <li>
+                <a href="">resources</a>
+                <ul>
+                    <li>main.html</li>
+                    <li>main.css</li>
+                    <li>main.js</li>
+                </ul>                
+            </li>
+            <li>
+                <a href="">packages</a>
+                <ul>
+                    <li>model</li>
+                    <li>repository</li>
+                    <li>service</li>
+                    <li>config</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="">txt</a>
+        <ul>
+            <li>
+                <a href="">to remember</a>
+                <ul>
+                    <li>names</li>
+                    <li>birthday</li>
+                    <li>musics that I need to listen</li>
+                    <li>books that I need to read</li>
+                </ul>
+            </li>
+            <li>
+                <a href="">to forget</a>
+                <ul>
+                    <li><del>she</del></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    let dir = document.querySelectorAll('a');
+    dir.forEach(d => {
+        let ul = d.nextElementSibling;
+        ul.setAttribute("style", "display: none;");
+
+        d.onclick = function (e) {
+            e.preventDefault();
+            ul.style.display = (ul.style.display === 'none') ? '' : 'none';
+        }
+    });
+</script>
