@@ -1,0 +1,71 @@
+<style>
+    caption {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    table {
+        border-collapse: collapse;        
+    }
+    thead th {
+        text-align: center;
+    }
+    tbody tr:hover {
+        background-color: darkgrey;
+    }
+    td {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    tfoot {
+        background-color: black;
+        font-weight: bold;
+        color: white;
+        align-items: center;
+    }
+    tfoot td {
+        padding-top: 6px;
+    }
+    .center {
+        text-align: end;
+    }
+
+</style>
+
+<table>
+    <caption>Funcionarios</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Setor</th>
+            <th>Cargo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>João Dionisio</td>
+            <td>19 anos</td>
+            <td>Desenvolvimento</td>
+            <td>Engenheiro de software</td>
+        </tr>
+        <tr>
+            <td>Zezinho</td>
+            <td>20 anos</td>
+            <td>TI</td>
+            <td>Gerente de infraestrutura</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>31 anos</td>
+            <td>RH</td>
+            <td>Recrutadora</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total de funcionarios</td>
+            <td class="center">3</td>
+        </tr>
+    </tfoot>
+</table>
